@@ -1,0 +1,23 @@
+<h1 style="color:coral; text-align:center;">글자수를 세보자9!</h1>
+
+<div style="text-align:center">
+  <a href="{% url 'about' %}" style="display:block; margin-bottom: 10px;"
+    >ABOUT</a
+  >
+
+  <form action="{% url 'count' %}">
+    <textarea
+      name="fulltext"
+      id=""
+      cols="30"
+      rows="10"
+      style="border: 1px solid black; padding: 10px;"
+    ></textarea>
+    <br />
+    <input
+      type="submit"
+      value="세보자!"
+      style="margin-top:10px; background-color: coral; border: none; color: white; padding: 7px 15px;"
+    />
+  </form>
+</div>

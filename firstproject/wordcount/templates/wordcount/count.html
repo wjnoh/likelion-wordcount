@@ -1,0 +1,14 @@
+<h1 style="text-align:center; color:coral">
+  당신이 입력한 텍스트는 {{ total }}개 단어로 구성이 돼있습니다.
+</h1>
+
+<div style="text-align: center">
+  <a href="{% url 'home' %}">다시하기</a>
+
+  <h1 style="color:coral">입력한 텍스트는</h1>
+  {{ fulltext }}
+
+  <h1 style="color:coral">단어 카운트:</h1>
+  {% for word, countTotal in dictionary %} {{ word }} - {{ countTotal }} <br />
+  {% endfor %}
+</div>
